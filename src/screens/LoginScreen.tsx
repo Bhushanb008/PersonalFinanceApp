@@ -38,7 +38,7 @@ const LoginScreen: React.FC<Props> = ({ navigation }) => {
     if (!value) {
       setEmailError('Email is required.');
     } else if (!emailRegex.test(value)) {
-      setEmailError('Invalid email address.');
+      setEmailError('Please enter a valid email address.');
     } else {
       setEmailError('');
     }
@@ -51,7 +51,7 @@ const LoginScreen: React.FC<Props> = ({ navigation }) => {
       setPasswordError('Password is required.');
     } else if (!passwordRegex.test(value)) {
       setPasswordError(
-        'Must include uppercase, number & symbol (min 6 chars).',
+        'Password must be Min 6 characters with uppercase, number & symbol',
       );
     } else {
       setPasswordError('');
@@ -74,7 +74,7 @@ const LoginScreen: React.FC<Props> = ({ navigation }) => {
       style={styles.MainLogin}
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
-      <View style={{}}>
+      <View style={{padding:20}}>
         <Text style={styles.titleTextStyle}>Welcome Back 👋</Text>
         <Text style={styles.subtitleText}>Login to manage your finances</Text>
 

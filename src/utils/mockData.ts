@@ -13,7 +13,7 @@ export const transactionsData: Transaction[] = [
   {
     id: '1',
     title: 'Salary',
-    amount: 40000,
+    amount: 90000,
     type: 'income',
     category: 'Job',
     date: '2026-02-02',
@@ -22,7 +22,7 @@ export const transactionsData: Transaction[] = [
   {
     id: '2',
     title: 'Freelance Project',
-    amount: 12000,
+    amount: 12090,
     type: 'income',
     category: 'Freelance',
     date: '2026-02-03',
@@ -49,7 +49,7 @@ export const transactionsData: Transaction[] = [
   {
     id: '5',
     title: 'Movie Night',
-    amount: 900,
+    amount: 400,
     type: 'expense',
     category: 'Entertainment',
     date: '2026-02-10',

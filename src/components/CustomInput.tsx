@@ -47,7 +47,7 @@ const CustomInput: React.FC<CustomInputProps> = ({
             styles.inputStyle,
             style,
             {
-              width: isPassWord ? WIDTH * 0.7 : WIDTH * 0.8,
+              width: WIDTH * 0.74,
             },
           ]}
           secureTextEntry={isPassWord && !showPassword}
@@ -55,7 +55,7 @@ const CustomInput: React.FC<CustomInputProps> = ({
           onFocus={() => setFocused(true)}
           onBlur={() => setFocused(false)}
         />
-        {isPassWord && (
+        {isPassWord ? (
           <TouchableOpacity
             onPress={() => {
               setShowPassword(!showPassword);
@@ -79,6 +79,8 @@ const CustomInput: React.FC<CustomInputProps> = ({
               />
             )}
           </TouchableOpacity>
+        ) : (
+          <View style={{ width: WIDTH * 0.1 }} />
         )}
       </View>
       {!!error && <Text style={styles.errorText}>{error}</Text>}
@@ -92,7 +94,7 @@ const styles = StyleSheet.create({
   labelText: {
     fontSize: 13,
     marginBottom: '1%',
-    marginTop:'4%',
+    marginTop: '4%',
     color: '#444',
     fontWeight: '500',
   },

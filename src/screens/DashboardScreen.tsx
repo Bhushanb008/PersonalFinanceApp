@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 12,
     marginTop: '4%',
     borderWidth: 1,
-    borderColor: '#ffffff00',
+    borderColor: '#e7a968ea',
     backgroundColor: '#FFF',
     shadowColor: '#000',
     shadowOffset: {
