@@ -1,97 +1,158 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 📱 Personal Finance App (React Native)
 
-# Getting Started
+A simple and clean **Personal Finance Management mobile app** built using **React Native + TypeScript**.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+The app helps users:
+- Authenticate via login/signup flow
+- View income & expenses List
+- View expenses categories
+- Ebel to Edit the expenses
 
-## Step 1: Start Metro
+---
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+# 🚀 Tech Stack
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+### Core
+- React Native (CLI)
+- TypeScript
 
-```sh
-# Using npm
-npm start
+### Navigation
+- @react-navigation/native
+- Native Stack Navigator
+- Bottom Tabs Navigator
 
-# OR using Yarn
-yarn start
+
+### State Management
+- (AsyncStorage / Hooks)
+
+---
+
+# 📂 Project Structure
+
+```
+src/
+ ├── navigation/
+ │    ├── StackNavigator
+ │  
+ │
+ ├── screens/
+ │    ├── Dashboard
+ │    ├── LoginScreen
+ │    ├── TransactionDetailsScreen
+ │    ├── TransactionsScreen
+ │
+ ├── components/
+ │    ├── CustomHeader
+ │    ├── CustomInput
+ │    ├── FilterBottomSheet
+ │    ├── Images
+ │    ├── NoDataFOund
+ │    ├── PrimaryButton
+ │
+ ├── assets/
+ │    ├── fonts
+ │    ├── images
+ ├── types/
+ │    ├── types
+ ├── utils/
+ │    ├── mockData
 ```
 
-## Step 2: Build and run your app
+---
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+# ⚙️ Setup Instructions
+
+## 1️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+---
+
+## 2️⃣ Start Metro
+
+```bash
+npm start
+```
+
+---
+
+## 3️⃣ Run App
 
 ### Android
-
-```sh
-# Using npm
+```bash
 npm run android
-
-# OR using Yarn
-yarn android
 ```
 
 ### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
+```bash
+cd ios && pod install
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+---
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+# 🧭 Navigation Architecture
 
-## Step 3: Modify your app
+### Why this structure?
+- Clear separation of Auth & Main App
+- Scalable
+- Easy to add new screens
 
-Now that you have successfully run the app, let's make changes!
+---
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+# ✨ Features Implemented
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+✅ Authentication flow  
+✅ Reusable Input components  
+✅ Dark theme UI  
+✅ Form validation  
+✅ TypeScript setup  
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+---
 
-## Congratulations! :tada:
+# 🤔 Assumptions & Trade-offs
 
-You've successfully run and modified your React Native App. :partying_face:
+- Mock/static data used instead of backend
+- No real API integration
+- Simple local state management
+- UI focused more on structure than animations
 
-### Now what?
+---
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+# 🔮 Improvements with More Time
 
-# Troubleshooting
+- IOS alignments (remaining due to i dont have MAC OS)
+- API integration
+- Redux Toolkit setup
+- Charts for analytics
+- Persistent storage (AsyncStorage)
+- Unit tests
+- Performance optimization
+- Better animations
+- Dark/Light theme switch
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+---
 
-# Learn More
+# 🧠 Why React Native?
 
-To learn more about React Native, take a look at the following resources:
+- Single codebase for Android + iOS
+- Faster development
+- Reusable components
+- Strong ecosystem
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+---
+
+# 👨‍💻 Author
+
+Bhushan Bhosale  
+React Native Developer
+
+---
+
+# 📌 Note
+
+This project is **not an e-commerce app**.  
+It is a **Personal Finance Management app** created as an assignment submission.
+
